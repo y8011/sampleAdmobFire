@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AE8FD0F6640BB5F0A598F80 /* Pods_sampleAdmob.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BDA81720606951212FCEDB0 /* Pods_sampleAdmob.framework */; };
 		B2CF3EAB20FC1A060086E52B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF3EAA20FC1A060086E52B /* AppDelegate.swift */; };
 		B2CF3EAD20FC1A060086E52B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF3EAC20FC1A060086E52B /* ViewController.swift */; };
 		B2CF3EB020FC1A060086E52B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2CF3EAE20FC1A060086E52B /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3BDA81720606951212FCEDB0 /* Pods_sampleAdmob.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sampleAdmob.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		902DCCEEBB2C6D221A2CB528 /* Pods-sampleAdmob.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sampleAdmob.release.xcconfig"; path = "Pods/Target Support Files/Pods-sampleAdmob/Pods-sampleAdmob.release.xcconfig"; sourceTree = "<group>"; };
 		B2CF3EA720FC1A060086E52B /* sampleAdmob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sampleAdmob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CF3EAA20FC1A060086E52B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2CF3EAC20FC1A060086E52B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,8 @@
 		B2CF3EB420FC1A0A0086E52B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2CF3EB620FC1A0A0086E52B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2CF3EBC20FC42E20086E52B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B2CF3EBE20FC4C590086E52B /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8F74D106F781CE7EBCE6FEE /* Pods-sampleAdmob.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sampleAdmob.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sampleAdmob/Pods-sampleAdmob.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +36,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AE8FD0F6640BB5F0A598F80 /* Pods_sampleAdmob.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FE1D83E231B0AD33F8F2462 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8F74D106F781CE7EBCE6FEE /* Pods-sampleAdmob.debug.xcconfig */,
+				902DCCEEBB2C6D221A2CB528 /* Pods-sampleAdmob.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3B310F4D425085445AB2699A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2CF3EBE20FC4C590086E52B /* FirebaseCore.framework */,
+				3BDA81720606951212FCEDB0 /* Pods_sampleAdmob.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B2CF3E9E20FC1A060086E52B = {
 			isa = PBXGroup;
 			children = (
 				B2CF3EA920FC1A060086E52B /* sampleAdmob */,
 				B2CF3EA820FC1A060086E52B /* Products */,
+				2FE1D83E231B0AD33F8F2462 /* Pods */,
+				3B310F4D425085445AB2699A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +100,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2CF3EB920FC1A0A0086E52B /* Build configuration list for PBXNativeTarget "sampleAdmob" */;
 			buildPhases = (
+				C085A34302C5A075C4BB0BD8 /* [CP] Check Pods Manifest.lock */,
 				B2CF3EA320FC1A060086E52B /* Sources */,
 				B2CF3EA420FC1A060086E52B /* Frameworks */,
 				B2CF3EA520FC1A060086E52B /* Resources */,
+				03519DED9A7C1C6E1EA454E4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +161,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03519DED9A7C1C6E1EA454E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-sampleAdmob/Pods-sampleAdmob-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sampleAdmob/Pods-sampleAdmob-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C085A34302C5A075C4BB0BD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sampleAdmob-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B2CF3EA320FC1A060086E52B /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		B2CF3EBA20FC1A0A0086E52B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8F74D106F781CE7EBCE6FEE /* Pods-sampleAdmob.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +369,7 @@
 		};
 		B2CF3EBB20FC1A0A0086E52B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 902DCCEEBB2C6D221A2CB528 /* Pods-sampleAdmob.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
